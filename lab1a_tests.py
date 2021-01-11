@@ -15,6 +15,15 @@ class TestLab1(unittest.TestCase):
         with self.assertRaises(ValueError):  # used to check for exception
             max_list_iter(tlist)
 
+    def test_max_list_03(self):
+        t_list = []
+        self.assertEqual(max_list_iter(t_list), None)
+
+    def test_reverse_NoneTest(self):
+        t_list = None
+        with self.assertRaises(ValueError):
+            reverse_list(None)
+
     def test_reverse(self) -> None:
         intlist = [1,2,3]
         revlist = reverse_list(intlist)
