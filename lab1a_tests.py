@@ -34,6 +34,8 @@ class TestLab1(unittest.TestCase):
         intlist = [1,2,3]
         reverse_list_mutate(intlist)
         self.assertEqual(intlist,[3,2,1])
+        self.assertEqual(intlist,[1,2,3])
+        
 
 if __name__ == "__main__":
         unittest.main()
