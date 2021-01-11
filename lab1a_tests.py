@@ -33,7 +33,8 @@ class TestLab1(unittest.TestCase):
     def test_reverse_mutate(self) -> None:
         intlist = [1,2,3]
         reverse_list_mutate(intlist)
-        self.assertEqual(intlist,[3,2,1])
+        self.assertEqual(revlist,[3,2,1])
+        self.assertEqual(intlist,[1,2,3])
         
 if __name__ == "__main__":
         unittest.main()
