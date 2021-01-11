@@ -9,6 +9,13 @@ class Location:
 
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
 
+    def __eq__(self, other):
+        return self.name == other.name and self.lat == other.lat and self.lon == other.lon # pragma: no cover
+
+    def __repr__(self):
+        return f"Location(name = {self.name}, lat = {self.lat}, lon = {self.lon})"
+
+
 def main() -> None:                 # pragma: no cover
     loc1 = Location("SLO", 35.3, -120.7)
     loc2 = Location("Paris", 48.9, 2.4)
