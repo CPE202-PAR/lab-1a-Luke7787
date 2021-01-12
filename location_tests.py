@@ -10,7 +10,7 @@ class TestLocation(unittest.TestCase):
         loc = Location('SLO', 35.3, -120.7)
         self.assertEqual(repr(loc), "Location('SLO', 35.3, -120.7)")
 
-    def test_repr_2(self):
+    def test_repr_2(self) -> None:
         loc = Location("Canada", 0.0, 0.0)
         self.assertEqual(repr(loc),"Location('Canada', 0.0, 0.0)")
 
