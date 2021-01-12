@@ -13,10 +13,10 @@ class Location:
         if isinstance(other, Location):
             return self.name == other.name and self.lat == other.lat and self.lon == other.lon
         else:
-            return False
+            return False # pragma: no cover
 
     def __repr__(self):
-        return f"Location(name = {self.name}, lat = {self.lat}, lon = {self.lon})" # pragma: no cover
+        return f"Location(name = {self.name}, lat = {self.lat}, lon = {self.lon})"
 
 
 def main() -> None:                 # pragma: no cover
