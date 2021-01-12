@@ -47,6 +47,13 @@ def reverse_list(int_list: Optional[List]) -> Optional[List]:
 def reverse_list_mutate(int_list: Optional[List]) -> None:
    """reverses a list of numbers, modifying the input list, returns None
    If list is None, raises ValueError"""
-   new_lst = int_list[::-1]
-   return new_lst
+   if int_list is None:
+      raise ValueError
+   empty = []
+   for i in range(len(int_list) + 1):
+      empty.append(int_list[-i])
+   empty.remove(int_list[0])
+   int_list = empty
+   return int_list
+
 
