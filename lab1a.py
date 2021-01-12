@@ -49,7 +49,6 @@ def reverse_list_mutate(int_list: Optional[List]) -> None:
    If list is None, raises ValueError"""
    if int_list is None:
       raise ValueError
-   else:
-       new_lst = int_list[::-1]
-       return new_lst
+   new_lst = int_list[::-1]
+   return new_lst
 
